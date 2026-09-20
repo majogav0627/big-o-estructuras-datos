@@ -5,10 +5,10 @@ from lista_enlazada import ListaEnlazada
 from arbol_bst import ArbolBST
 
 # Reemplazarás esta URL con tu enlace RAW de GitHub en el siguiente paso
-URL = "PEGAR_AQUI_URL_RAW"
+URL = "https://raw.githubusercontent.com/majogav0627/big-o-estructuras-datos/a7eced21d1efa525e64f5d9cfeb1eb4b9b02a704/data/estudiantes.csv"
 
 def descargar_datos(url):
-    if url == "PEGAR_AQUI_URL_RAW":
+    if url == "https://raw.githubusercontent.com/majogav0627/big-o-estructuras-datos/a7eced21d1efa525e64f5d9cfeb1eb4b9b02a704/data/estudiantes.csv":
         raise ValueError("Debe reemplazar la constante URL con la dirección RAW de GitHub.")
     
     print("Descargando datos desde GitHub...")
