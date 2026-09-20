@@ -8,15 +8,12 @@ from arbol_bst import ArbolBST
 URL = "https://raw.githubusercontent.com/majogav0627/big-o-estructuras-datos/a7eced21d1efa525e64f5d9cfeb1eb4b9b02a704/data/estudiantes.csv"
 
 def descargar_datos(url):
-    if url == "https://raw.githubusercontent.com/majogav0627/big-o-estructuras-datos/a7eced21d1efa525e64f5d9cfeb1eb4b9b02a704/data/estudiantes.csv":
-        raise ValueError("Debe reemplazar la constante URL con la dirección RAW de GitHub.")
-    
     print("Descargando datos desde GitHub...")
     respuesta = urllib.request.urlopen(url)
     lineas = [linea.decode('utf-8') for linea in respuesta.readlines()]
     lector = csv.DictReader(lineas)
     return list(lector)
-
+    
 def buscar_lista(estudiantes, carnet):
     for estudiante in estudiantes:
         if estudiante["carnet"] == carnet:
